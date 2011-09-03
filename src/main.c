@@ -6,15 +6,20 @@
 int main(){
 
 
-  char a[1024] = "abc";
+  char a[4] = "abc";
+
+  int x;
+  printf("sizeof(x)=%d\n", sizeof(x));
+  printf("sizeof(a[0])=%d\n", sizeof(a[0]));
+  printf("sizeof(a)=%d\n", sizeof(a));
 
 
-  a[2] = 0;
-  a[4] = NULL;
   printf("a=%s\n", a);
   printf("a[0]=%c\n", a[0]);
   printf("&a[0]=%p\n", &a[0]);
-  printf("&a[0]=%p\n", a);
+  printf("a[1]=%c\n", a[1]);
+  printf("&a[1]=%p\n", (a+1));
+  printf("a[1]=%c\n", *(a+1));
 
 
   return 0;
