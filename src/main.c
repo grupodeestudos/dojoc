@@ -14,26 +14,16 @@ int insere(Node *raiz, int n){
   return 0;
 }
 
+void dump(Node *raiz){
 
-void soma2(int x, int *c){
-  *c = x + 2;
-  //return x + 2;
+}
+
+
+Node *busca(Node *raiz, int q){
 }
 
 
 int main(){
-
-  int x = 10;
-  int c = 9;
-  
-  printf("x=%d\n", x);
-  printf("c=%d\n", c);
-  printf("&c=%p\n", &c);
-  soma2(x, &c);
-
-  printf("c=%d\n", c);
-
-  //printf("soma2(x)=%d\n", soma2(x, c));
 
 
   return 0;
