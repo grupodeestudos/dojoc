@@ -5,17 +5,16 @@
 
 int main(){
 
-  int x = 10;
-  int *y = NULL;
-  int *z = NULL;
 
-  printf("x=%d\n", x);
-  y = &x;
-  z = &y;
-  printf("y=%p\n", y);
-  printf("&y=%p\n", &y);
-  printf("z=%p\n", z);
-  printf("z=%p\n", (*z));
+  char a[1024] = "abc";
+
+
+  a[2] = 0;
+  a[4] = NULL;
+  printf("a=%s\n", a);
+  printf("a[0]=%c\n", a[0]);
+  printf("&a[0]=%p\n", &a[0]);
+  printf("&a[0]=%p\n", a);
 
 
   return 0;
