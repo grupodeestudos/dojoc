@@ -1,16 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include <linkedlist.h>
+struct _Node {
+  int v;
+  int c;
+  char *o;
+  float p;
+};
+
+typedef struct _Node Node;
 
 int main(){
 
 
-  int *p = malloc(sizeof(int) * 10);
+  Node *n;
+  Node p;
 
-  printf("p=%p\n", p);
+  n = malloc(sizeof(Node) * 3);
+
   printf("sizeof(p)=%d\n", sizeof(p));
-
+  printf("sizeof(n)=%d\n", sizeof(n));
 
   return 0;
 }
